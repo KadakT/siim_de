@@ -287,9 +287,10 @@ p {
     width: 0;
     height: 0;
     border-top: 30px solid var(--color-primary);
-    border-left: 585px outset transparent;
-    border-right: 585px outset transparent;
+    border-left: 50vw outset transparent;
+    border-right: 50vw outset transparent;
     position: relative;
+    margin-left: -20px;
 }
 
 .portfolio .triangle {

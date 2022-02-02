@@ -27,18 +27,18 @@
     //Get width of container
     var containerWidth = $('.section .container').width();
     //Resize animated triangle
-    $(".triangle").css({
-        "border-left": containerWidth / 2 + 'px outset transparent',
-        "border-right": containerWidth / 2 + 'px outset transparent'
-    });
+    // $(".triangle").css({
+    //     "border-left": containerWidth / 2 + 'px outset transparent',
+    //     "border-right": containerWidth / 2 + 'px outset transparent'
+    // });
 
-    $(window).resize(function () {
-        containerWidth = $('.container').width();
-        $(".triangle").css({
-            "border-left": containerWidth / 2 + 'px outset transparent',
-            "border-right": containerWidth / 2 + 'px outset transparent'
-        });
-    });
+    // $(window).resize(function () {
+    //     containerWidth = $('.container').width();
+    //     $(".triangle").css({
+    //         "border-left": containerWidth / 2 + 'px outset transparent',
+    //         "border-right": containerWidth / 2 + 'px outset transparent'
+    //     });
+    // });
 
     // Bind to scroll
     $(window).scroll(function () {
