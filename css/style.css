@@ -293,6 +293,10 @@ p {
     margin-left: -20px;
 }
 
+.home-container .triangle{
+    margin-left: 0;
+}
+
 .portfolio .triangle {
     border-top: 30px solid var(--color-secondary-dark);
 }
