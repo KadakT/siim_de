@@ -246,7 +246,8 @@ p {
 
     .navbar li:hover > a, 
     .navbar a:focus{
-        box-shadow: rgb(0 0 0 / 13%) 0px 3px 8px inset;
+        /* box-shadow: rgb(0 0 0 / 13%) 0px 3px 8px inset; */
+        box-shadow: inset 0px 3px 8px rgba(0, 0, 0 , 0.13);
     }
 }
 /******
