@@ -4,6 +4,7 @@
  * Author: GraphBerry
  * Author URL: http://graphberry.com
  * License: http://graphberry.com/pages/license
+ * Rewrote by Tatjana Kadak
 -->
 <html lang="en">
     
@@ -12,11 +13,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pluton Theme by BraphBerry.com</title>
         <!-- Load Roboto font -->
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <!-- Load css styles -->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.min.css" />
         <link rel="stylesheet" type="text/css" href="css/pluton.css" />
         <!--[if IE 7]>
             <link rel="stylesheet" type="text/css" href="css/pluton-ie7.css" />
@@ -24,20 +25,15 @@
         <!-- <link rel="stylesheet" type="text/css" href="css/jquery.cslider.css" /> -->
         <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
         <link rel="stylesheet" type="text/css" href="css/animate.css" />
-        <!-- Fav and touch icons -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72.png">
-        <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57.png">
-        <link rel="shortcut icon" href="images/ico/favicon.ico">
     </head>
     
     <body>
         <div class="navbar">
             <div class="navbar-inner">
                 <div class="container">
-                    <a href="#" class="brand">
-                        <img src="images/logo.svg" alt="Logo" />
+                    <a href="#home" class="brand">
+                        <!-- <img src="images/logo.svg" alt="Logo Eastconsult OÜ" /> -->
+                        <h1 class="logo">Eastconsult OÜ</h1>
                         <!-- This is website logo -->
                     </a>
                     <!-- Navigation button, visible on small resolution -->
@@ -47,12 +43,12 @@
                     <!-- Main navigation -->
                     <nav class="nav-collapse collapse pull-right">
                         <ul class="nav" id="top-navigation">
-                            <li class="active"><a href="#home">Avaleht</a></li>
+                            <!-- <li class="active"><a href="#home">Avaleht</a></li> -->
                             <li><a href="#service">Teenused</a></li>
                             <li><a href="#portfolio">Tehtud tööd</a></li>
-                            <li><a href="#about">Ettevõttes</a></li>
+                            <li><a href="#about">Ettevõttest</a></li>
                             <li><a href="#team">Meeskond</a></li>
-                            <li><a href="#clients">Kliendid</a></li>
+                            <!-- <li><a href="#clients">Kliendid</a></li> -->
                             <li><a href="#contact">Kontakt</a></li>
                         </ul>
                     </nav>
@@ -67,7 +63,7 @@
                 <!-- mask elemet use for masking background image -->
                 <div class="mask"></div>
                 <div class="tagline">
-                    <p>Insenertehnilised lahendused meilt!</p>
+                    <p>Meie teame kuidas!</p>
                 </div>
             </div>
         </div>
@@ -77,37 +73,37 @@
             <div class="container">
                 <!-- Start title section -->
                 <div class="title">
-                    <h1>Teenused</h1>
+                    <h2>Teenused</h2>
                     <!-- Section's title goes here -->
-                    <p>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
+                    <p>Meie poolt pakutavad teenused.</p>
                     <!--Simple description for section goes here. -->
                 </div>
                 <div class="row-fluid">
                     <div class="span4">
                         <div class="centered service">
                             <div class="circle-border zoom-in">
-                                <img class="img-circle" src="images/icon_1.svg" alt="service 1">
-                            </div>
-                            <h3>Ehituse omanikujärelevalve</h3>
-                            <p>We Create Modern And Clean Theme For Your Business Company.</p>
-                        </div>
-                    </div>
-                    <div class="span4">
-                        <div class="centered service">
-                            <div class="circle-border zoom-in">
-                                <img class="img-circle" src="images/icon_2.svg" alt="service 2" />
+                                <img class="img-circle" src="icons/road.svg" alt="service 1">
                             </div>
                             <h3>Teehoiutööde omanikujärelevalve</h3>
-                            <p>We Create Modern And Powerful Theme With Lots Animation And Features</p>
+                            <!-- <p>We Create Modern And Clean Theme For Your Business Company.</p> -->
                         </div>
                     </div>
                     <div class="span4">
                         <div class="centered service">
                             <div class="circle-border zoom-in">
-                                <img class="img-circle" src="images/icon_3.svg" alt="service 3">
+                                <img class="img-circle" src="icons/warehouse.svg" alt="Ehituse omanikujärelevalve ikoon" />
                             </div>
-                            <h3>Ehitushangete läbiviimine</h3>
-                            <p>We Create Modern And Powerful Html5 And CSS3 Code Easy For Read And Customize.</p>
+                            <h3>Ehituse omanikujärelevalve</h3>
+                            <!-- <p>We Create Modern And Powerful Theme With Lots Animation And Features</p> -->
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="centered service">
+                            <div class="circle-border zoom-in">
+                                <img class="img-circle" src="icons/puzzle-piece-solid.svg" alt="Projektijuhtimine ja konsultatsiooni ikoon">
+                            </div>
+                            <h3>Projektijuhtimine ja konsultatsioon</h3>
+                            <!-- <p>We Create Modern And Powerful Html5 And CSS3 Code Easy For Read And Customize.</p> -->
                         </div>
                     </div>
                 </div>
@@ -115,28 +111,28 @@
                     <div class="span4">
                         <div class="centered service">
                             <div class="circle-border zoom-in">
-                                <img class="img-circle" src="images/icon_4.svg" alt="service 1">
+                                <img class="img-circle" src="icons/industry.svg" alt="EPCM teenuse ikoon">
                             </div>
-                            <h3>Ehitusalane konsultatsioon</h3>
-                            <p>We Create Modern And Clean Theme For Your Business Company.</p>
+                            <h3>EPCM teenus taastuvenergia-, energeetika- ja tööstusettevõtetele</h3>
+                            <!-- <p>We Create Modern And Clean Theme For Your Business Company.</p> -->
                         </div>
                     </div>
                     <div class="span4">
                         <div class="centered service">
                             <div class="circle-border zoom-in">
-                                <img class="img-circle" src="images/icon_5.svg" alt="service 2" />
-                            </div>
-                            <h3>Projektijuhtimine/tellija esindamine</h3>
-                            <p>We Create Modern And Powerful Theme With Lots Animation And Features</p>
-                        </div>
-                    </div>
-                    <div class="span4">
-                        <div class="centered service">
-                            <div class="circle-border zoom-in">
-                                <img class="img-circle" src="images/icon_6.svg" alt="service 3">
+                                <img class="img-circle" src="icons/tasks-solid.svg" alt="Ekspertiiside teostamine ikoon">
                             </div>
                             <h3>Ekspertiiside teostamine</h3>
-                            <p>We Create Modern And Powerful Html5 And CSS3 Code Easy For Read And Customize.</p>
+                            <!-- <p>We Create Modern And Powerful Theme With Lots Animation And Features</p> -->
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="centered service">
+                            <div class="circle-border zoom-in">
+                                <img class="img-circle" src="icons/pen-ruler.svg" alt="Teede ja parklate projekteerimine ikoon">
+                            </div>
+                            <h3>Teede ja parklate projekteerimine</h3>
+                            <!-- <p>We Create Modern And Powerful Html5 And CSS3 Code Easy For Read And Customize.</p> -->
                         </div>
                     </div>
                 </div>
@@ -144,61 +140,25 @@
         </div>
         <!-- Service section end -->
         <!-- Portfolio section start -->
-        <div class="section secondary-section " id="portfolio">
+        <div class="section secondary-section portfolio" id="portfolio">
             <div class="triangle"></div>
             <div class="container">
                 <div class=" title">
-                    <h1>Tehtud tööd</h1>
-                    <p>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
+                    <h2>Tehtud tööd</h2>
+                    <p>Valik meie poolt ja abil tehtud töid.</p>
                 </div>
-                    <!-- <div class="thumbnail">
-                        <h3>2017</h3>
-                        <ul>
-                            <li>Riigitee nr 11 Tallinna ringtee km 2,8-6,0 Lagedi liiklussõlme ja teelõigu ehitus, FIDIC Inseneri teenus</li>
-                            <li>Põhimaantee nr 4 (E67) Tallinn-Pärnu-Ikla km 28 – 37 Ääsmäe - Kohatu 2+1 möödasõidualade ehitus, FIDIC Inseneri teenus</li>
-                            <li>Tartu läänepoolse ÜS II ehitusala jalakäijate tunneli ehitus ja taastusremont, projektijuhtimine</li>
-                            <li>Jõhvi linnas Puru tee pikenduse ehitustööd, sh jalakäijate kaarsild ja tunnel</li>
-                            <li>Riigitee nr 11106 Kuusalu tee km 0-1,9 ja nr 11260 Jõelähtme - Kemba km 20,1-24,4 remont</li>
-                            <li>Asfaltkatete kuumtaastamised 2017 Rooparemix meetodil</li>
-                            <li>Riigitee nr 55 Mõisaküla tee km 0-3,5 rekonstrueerimine</li>
-                        </ul>
-                    </div>
-                    <div class="thumbnail">
-                        <h3>2018</h3>
-                        <ul>
-                            <li>Riigitee nr 11 Tallinna ringtee km 2,8-6,0 Lagedi liiklussõlme ja teelõigu ehitus, FIDIC Inseneri teenus</li>
-                            <li>Põhimaantee nr 4 (E67) Tallinn-Pärnu-Ikla km 28 – 37 Ääsmäe - Kohatu 2+1 möödasõidualade ehitus, FIDIC Inseneri teenus</li>
-                            <li>Tartu läänepoolse ÜS II ehitusala jalakäijate tunneli ehitus ja taastusremont, projektijuhtimine</li>
-                            <li>Jõhvi linnas Puru tee pikenduse ehitustööd, sh jalakäijate kaarsild ja tunnel</li>
-                            <li>Riigitee nr 11106 Kuusalu tee km 0-1,9 ja nr 11260 Jõelähtme - Kemba km 20,1-24,4 remont</li>
-                            <li>Asfaltkatete kuumtaastamised 2017 Rooparemix meetodil</li>
-                            <li>Riigitee nr 55 Mõisaküla tee km 0-3,5 rekonstrueerimine</li>
-                        </ul>
-                    </div>
-                    <div class="thumbnail">
-                        <h3>2019</h3>
-                        <ul>
-                            <li>Riigitee nr 11 Tallinna ringtee km 2,8-6,0 Lagedi liiklussõlme ja teelõigu ehitus, FIDIC Inseneri teenus</li>
-                            <li>Põhimaantee nr 4 (E67) Tallinn-Pärnu-Ikla km 28 – 37 Ääsmäe - Kohatu 2+1 möödasõidualade ehitus, FIDIC Inseneri teenus</li>
-                            <li>Tartu läänepoolse ÜS II ehitusala jalakäijate tunneli ehitus ja taastusremont, projektijuhtimine</li>
-                            <li>Jõhvi linnas Puru tee pikenduse ehitustööd, sh jalakäijate kaarsild ja tunnel</li>
-                            <li>Riigitee nr 11106 Kuusalu tee km 0-1,9 ja nr 11260 Jõelähtme - Kemba km 20,1-24,4 remont</li>
-                            <li>Asfaltkatete kuumtaastamised 2017 Rooparemix meetodil</li>
-                            <li>Riigitee nr 55 Mõisaküla tee km 0-3,5 rekonstrueerimine</li>
-                        </ul>
-                    </div> -->
                     <div class="timeline">
                         <div class="container left">
                           <div class="date">2021</div>
                           <div class="content">
                             <ul>
-                                <li>Riigitee nr 11 Tallinna ringtee km 2,8-6,0 Lagedi liiklussõlme ja teelõigu ehitus, FIDIC Inseneri teenus</li>
-                                <li>Põhimaantee nr 4 (E67) Tallinn-Pärnu-Ikla km 28 – 37 Ääsmäe - Kohatu 2+1 möödasõidualade ehitus, FIDIC Inseneri teenus</li>
-                                <li>Tartu läänepoolse ÜS II ehitusala jalakäijate tunneli ehitus ja taastusremont, projektijuhtimine</li>
-                                <li>Jõhvi linnas Puru tee pikenduse ehitustööd, sh jalakäijate kaarsild ja tunnel</li>
-                                <li>Riigitee nr 11106 Kuusalu tee km 0-1,9 ja nr 11260 Jõelähtme - Kemba km 20,1-24,4 remont</li>
-                                <li>Asfaltkatete kuumtaastamised 2017 Rooparemix meetodil</li>
-                                <li>Riigitee nr 55 Mõisaküla tee km 0-3,5 rekonstrueerimine</li>
+                                <li>Kohtla-Järve Kalevi tn rekonstrueerimis tööde II etapi omanikujärelevalve</li>
+                                <li>Riigitee 1 Tallinn-Narva km 170,028 Toila ristmiku ja riigitee 13105 Kõrve-Toila km 0,13-5,398 rekonstrueerimise omanikujärelevalve</li>
+                                <li>Jõhvi Narva mnt II etapi projekteerimis ja ehitustööde omanikujärelevalve</li>
+                                <li>Sillamäe Virus pst rekonstrueerimise I etapi projekteerimis ja ehitustööde omanikujärelevalve</li>
+                                <li>Vasalemma koolistaadioni rekonstrueerimistööde omanikujärelevalve</li>
+                                <li>Sillamäe Kergejõustiku- ja jalgpallistaadioni põhiprojekti ekspertiis</li>
+                                <li>Haanja kergliiklustee põhiprojekti ekspertiis</li>
                             </ul>
                           </div>
                         </div>
@@ -206,13 +166,10 @@
                           <div class="date">2020</div>
                           <div class="content">
                             <ul>
-                                <li>Riigitee nr 11 Tallinna ringtee km 2,8-6,0 Lagedi liiklussõlme ja teelõigu ehitus, FIDIC Inseneri teenus</li>
-                                <li>Põhimaantee nr 4 (E67) Tallinn-Pärnu-Ikla km 28 – 37 Ääsmäe - Kohatu 2+1 möödasõidualade ehitus, FIDIC Inseneri teenus</li>
-                                <li>Tartu läänepoolse ÜS II ehitusala jalakäijate tunneli ehitus ja taastusremont, projektijuhtimine</li>
-                                <li>Jõhvi linnas Puru tee pikenduse ehitustööd, sh jalakäijate kaarsild ja tunnel</li>
-                                <li>Riigitee nr 11106 Kuusalu tee km 0-1,9 ja nr 11260 Jõelähtme - Kemba km 20,1-24,4 remont</li>
-                                <li>Asfaltkatete kuumtaastamised 2017 Rooparemix meetodil</li>
-                                <li>Riigitee nr 55 Mõisaküla tee km 0-3,5 rekonstrueerimine</li>
+                                <li>Võrus Räpina maantee rekonstrueerimise projekti ekspertiisi teostamine</li>
+                                <li>Narvas Uuskõla põik tänava rekonstrueerimistööde omanikujärelealve teostamine</li>
+                                <li>Jõhvis Narva mnt rekonstrueerimistööde  I etappi omanikujärelevalve teostamine</li>
+                                <li>Eesti Energia AS Enefit 280-2 tehase rajamise  konsultatsiooni teenuse osutamine</li>
                             </ul>
                           </div>
                         </div>
@@ -220,15 +177,40 @@
                           <div class="date">2019</div>
                           <div class="content">
                             <ul>
-                                <li>Riigitee nr 11 Tallinna ringtee km 2,8-6,0 Lagedi liiklussõlme ja teelõigu ehitus, FIDIC Inseneri teenus</li>
-                                <li>Põhimaantee nr 4 (E67) Tallinn-Pärnu-Ikla km 28 – 37 Ääsmäe - Kohatu 2+1 möödasõidualade ehitus, FIDIC Inseneri teenus</li>
-                                <li>Tartu läänepoolse ÜS II ehitusala jalakäijate tunneli ehitus ja taastusremont, projektijuhtimine</li>
-                                <li>Jõhvi linnas Puru tee pikenduse ehitustööd, sh jalakäijate kaarsild ja tunnel</li>
-                                <li>Riigitee nr 11106 Kuusalu tee km 0-1,9 ja nr 11260 Jõelähtme - Kemba km 20,1-24,4 remont</li>
-                                <li>Asfaltkatete kuumtaastamised 2017 Rooparemix meetodil</li>
-                                <li>Riigitee nr 55 Mõisaküla tee km 0-3,5 rekonstrueerimine</li>
+                                <li>Rakveres Pikk tänav rekonstrueerimistööde I etapi omanikujärelevalve teostamine</li>
+                                <li>Kohtla-Järve Kalevi tänava ja Järveküla tee lõigu I etapi rekonstrueerimistööde omanikujärelevalve teostamine</li>
+                                <li>Sillamäe Kajaka tn teppide renoveerimise omanikujärelevalve teenus</li>
+                                <li>Narvas OÜ Waldchep tehasehoone ehituse omanikujärelevalve teostamine</li>
                             </ul>
                           </div>
+                        </div>
+                        <div class="container right">
+                            <div class="date">2018</div>
+                            <div class="content">
+                              <ul>
+                                  <li>Narva-Jõesuu kergliiklusteede rajamise I etappi omanikujärelevalve teostamine</li>
+                              </ul>
+                            </div>
+                        </div>
+                        <div class="container left">
+                            <div class="date">2017</div>
+                            <div class="content">
+                              <ul>
+                                  <li>Põhimaantee 1 (E20) Tallinn–Narva ja Sillamäe sadama raudtee kahetasandilise ristmiku ehituse ja Sillamäe linna lõigu ümberehitus. II ETAPP 1. ehitusjärgu omanikujärelevalve</li>
+                                  <li>Kohtla-Nõmme vallavalitsusele ehitusnõuniku teenuse osutamine</li>
+                                  <li>Aidu tuulepargi ehitusjuhitimis teenuse osutamine</li>
+                              </ul>
+                            </div>
+                        </div>
+                        <div class="container right">
+                            <div class="date">2016</div>
+                            <div class="content">
+                              <ul>
+                                  <li>Aidu tuulepargi ehitusjuhtimis teenuse osutamine</li>
+                                  <li>Kohtla-Nõmme vallavalitsusele ehitusnõuniku teenuse osutamine</li>
+                                  <li>Alajõe vallavalitsusele ehitusnõuniku teenuse osutamine</li>
+                              </ul>
+                            </div>
                         </div>
                       </div>
                 </div>
@@ -240,122 +222,15 @@
             <div class="triangle"></div>
             <div class="container">
                 <div class="about-text centered">
-                    <h3>Ettevõttest</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                    <h2>Ettevõttest</h2>
+                    <p>Eastconsult OÜ on 2016. aastal Eestis asutatud ettevõte, mis täna tegutseb lisaks Eestile ka Skandinaavias ja  Saksamaal. Ettevõtte põhitegevusteks on omanikujärelevalve ja erinevate projektide juhtimine ehitus-, energeetika-, tööstus- ja taastuvenergia valdkonnas. Omame professionaalset rahvusvahelist kogemust taastuvenergia, energeetika ning keemiatööstuse suurprojektides.</p>
+                    <p>Oleme kliendile orienteeritud ning meie koostöö põhineb läbipaistvusel, vastutusel, ärakuulamisel ja võimel pidevalt oma tegevust muutuvas keskkonnas arendada. Garanteerime, et peame oma lubadusi ning meile on oluline ka viis, kuidas tulemus saavutatakse.</p>
                 </div>
                 <div class="title" id="team">
-                    <h1>Meeskond</h1>
-                    <p>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
-                </div>
-                <div class="row-fluid team">
-                    <div class="span4" id="first-person">
-                        <div class="thumbnail">
-                            <img src="images/Team1.png" alt="team 1">
-                            <h3>John Doe</h3>
-                            <ul class="social">
-                                <li>
-                                    <a href="">
-                                        <span class="icon-facebook-circled"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <span class="icon-twitter-circled"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <span class="icon-linkedin-circled"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="mask">
-                                <h2>Copywriter</h2>
-                                <p>When you stop expecting people to be perfect, you can like them for who they are.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="span4" id="second-person">
-                        <div class="thumbnail">
-                            <img src="images/Team2.png" alt="team 1">
-                            <h3>John Doe</h3>
-                            <ul class="social">
-                                <li>
-                                    <a href="">
-                                        <span class="icon-facebook-circled"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <span class="icon-twitter-circled"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <span class="icon-linkedin-circled"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="mask">
-                                <h2>Designer</h2>
-                                <p>When you stop expecting people to be perfect, you can like them for who they are.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About us section end -->
-    
-        <div class="section third-section" id="clients">
-            <div class="container centered">
-                <div class="sub-section">
-                    <div class="title clearfix">
-                        <div class="pull-left">
-                            <h3>Kliendid</h3>
-                        </div>
-                        <ul class="client-nav pull-right">
-                            <li id="client-prev"></li>
-                            <li id="client-next"></li>
-                        </ul>
-                    </div>
-                    <ul class="row client-slider" id="clint-slider">
-                        <li>
-                            <a href="">
-                                <img src="images/clients/ClientLogo01.png" alt="client logo 1">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="images/clients/ClientLogo02.png" alt="client logo 2">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="images/clients/ClientLogo03.png" alt="client logo 3">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="images/clients/ClientLogo04.png" alt="client logo 4">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="images/clients/ClientLogo05.png" alt="client logo 5">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="images/clients/ClientLogo02.png" alt="client logo 6">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="images/clients/ClientLogo04.png" alt="client logo 7">
-                            </a>
-                        </li>
-                    </ul>
+                    <h2>Meeskond</h2>
+                    <p>Meie meeskond koosneb pikaajalise kogemusega oma ala ekspertidest, kellel on 5-20 aastat erialast töökogemust. Kuna omame  laia rahvusvahelist ekspertide võrgustikku, kaasame vajadusel, vastavalt projektide sisule, parimaid eksperte Euroopast ja Venemaalt.</p>
+                    <p>Soovime, et meie klientide väljakutsetega tegeleksid parimad spetsialistid, seega investeerime nende pidevasse arengusse.</p>
+                    <p>Meie eksperdid, kes kliendi projektidega töötavad, on orienteeritult kliendile sobiva eesmärgi saavutamisele. Ühtse meeskonnana tegutsedes jõuame kliendi visioonist lähtuva ning meie poolt läbimõeldud ja hoolikalt planeeritud lõpptulemuseni. Väljakutsed on meie jaoks võimalused ning meid juhib kirg huvitavate projektide vastu.</p>
                 </div>
             </div>
         </div>
@@ -364,53 +239,29 @@
             <div class="section secondary-section">
                 <div class="container">
                     <div class="title">
-                        <h1>Kontakt</h1>
-                        <p>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
+                        <h2>Kontakt</h2>
+                        <p>Küsimuste korral võtke meiega ühendust kas telefoni või e-maili teel ning vastame Teile.</p>
                     </div>
                 </div>
+                <div class="container centered">
+                    <h3>Eastconsult OÜ</h3>
+                    <p>Reg kood 12972814<br> KMKR EE101900164</p>
+                </div>
+                
                 <div class="container">
                     <div class="span9 center contact-info">
-                        <p>123 Fifth Avenue, 12th,Belgrade,SRB 11000</p>
-                        <p class="info-mail">ourstudio@somemail.com</p>
-                        <p>+11 234 567 890</p>
-                        <p>+11 286 543 850</p>
-                        <!-- <div class="title">
-                            <h3>We Are Social</h3>
-                        </div> -->
-                    </div>
-                    <div class="row-fluid centered">
-                        <ul class="social">
-                            <li>
-                                <a href="">
-                                    <span class="icon-facebook-circled"></span>
-                                </a>
-                            </li>
-                            <!-- <li>
-                                <a href="">
-                                    <span class="icon-twitter-circled"></span>
-                                </a>
-                            </li> -->
-                            <li>
-                                <a href="">
-                                    <span class="icon-linkedin-circled"></span>
-                                </a>
-                            </li>
-                            <!-- <li>
-                                <a href="">
-                                    <span class="icon-pinterest-circled"></span>
-                                </a>
-                            </li> -->
-                            <li>
-                                <a href="">
-                                    <span class="icon-dribbble-circled"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <span class="icon-gplus-circled"></span>
-                                </a>
-                            </li>
-                        </ul>
+                        <div>
+                            <span class="contact-info__icon zoom-in"><iframe src="icons/map-location.svg" ></iframe></span>
+                            <p>Oru, Aa küla, Lüganuse vald <br>43311 Ida-Viiruma </p>
+                        </div>
+                        <div>
+                            <span class="contact-info__icon zoom-in"><iframe src="icons/phone.svg" ></iframe></span>
+                            <a href="tel:+37255677175">+372 5567 7175</a>
+                        </div>
+                        <div>
+                            <span class="contact-info__icon zoom-in"><iframe src="icons/envelope.svg" ></iframe></span>
+                            <a class="info-mail" href="mailto:siim@eastconsult.ee">siim@eastconsult.ee</a><br>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -418,8 +269,7 @@
         <!-- Contact section edn -->
         <!-- Footer section start -->
         <div class="footer">
-            <p>&copy; 2013 Theme by <a href="http://www.graphberry.com">GraphBerry</a>, <a href="http://goo.gl/NM84K2">Documentation</a></p>
-            <p>Icon by <a href="https://freeicons.io/profile/5790">106171237606937156455</a> on <a href="https://freeicons.io">freeicons.io</a>            </p>
+            <p>&copy; Eastconsult OÜ <a class="info-mail" href="mailto:siim@eastconsult.ee">siim@eastconsult.ee</a></p>
         </div>
         <!-- Footer section end -->
         <!-- ScrollUp button start -->
@@ -438,8 +288,6 @@
         <script type="text/javascript" src="js/jquery.cslider.js"></script>
         <script type="text/javascript" src="js/jquery.placeholder.js"></script>
         <script type="text/javascript" src="js/jquery.inview.js"></script>
-        <!-- Load google maps api and call initializeMap function defined in app.js -->
-        <script async="" defer="" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=initializeMap"></script>
         <!-- css3-mediaqueries.js for IE8 or older -->
         <!--[if lt IE 9]>
             <script src="js/respond.min.js"></script>
