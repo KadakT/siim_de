@@ -35,6 +35,7 @@
     --fs-xxl: 4rem;
     --fs-xl: 2.4rem;
     --fs-600: 2rem;
+    --fs-550: 1.6rem;
     --fs-500: 1.25rem;
     --fs-400: 1rem;
   }
@@ -45,6 +46,7 @@
         --fs-xxl: 3.2rem;
         --fs-xl: 1.92rem;
         --fs-600: 1.6rem;
+        --fs-550: 1.2rem;
         --fs-500: 1rem;
         --fs-400: .8rem;
       }
@@ -56,6 +58,7 @@
         --fs-xxl: 2.8rem;
         --fs-xl: 1.7rem;
         --fs-600: 1.3rem;
+        --fs-550: 1rem;
         --fs-500: .9rem;
         --fs-400: .8rem;
       }
@@ -555,7 +558,8 @@ p {
 ***************************************/
 .service{
     margin-top:20px;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
     height: auto;
 }
  .service, .service h2 {
@@ -575,6 +579,10 @@ p {
     width:78px;
     height:78px;
     max-width: 73%;
+}
+
+.service h3{
+    font-size: var(--fs-550);
 }
 
 @media (hover){
