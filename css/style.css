@@ -129,6 +129,16 @@ p {
     border: none;
     box-shadow: none;
 }
+
+/* .navbar-inner .container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar-inner nav{
+    margin-left: auto;
+} */
 /* .navbar .brand img {
     width:220px;
 } */
@@ -474,7 +484,7 @@ p {
     position: relative;
     margin:0 auto;
     overflow: hidden;
-    background: transparent url(../images/test.jpg) no-repeat 0% center; /* Replace with your background image*/
+    background: transparent url(../images/home_background.jpg) no-repeat 0% center; /* Replace with your background image*/
     background-size: cover;
     -webkit-transition: background-position 1s ease-out 0.3s;
     -moz-transition: background-position 1s ease-out 0.3s;
@@ -496,7 +506,7 @@ p {
     width:100%;
     height:100%;
     background: var(--color-secondary-dark);
-    opacity:0.8;
+    opacity:0.4;
     filter: alpha(opacity=85);
 }
 .home-container .tagline {
@@ -509,7 +519,7 @@ p {
     z-index: 2;
 }
 
-.home-container .tagline p{
+.home-container .tagline h1{
     font-size: var(--fs-xxl);
     padding: 1.5rem 2rem;
     color: var(--color-primary);
@@ -524,18 +534,54 @@ p {
 ***************************************/
 .service{
     margin-top:20px;
+    overflow: hidden;
+    height: auto;
 }
  .service, .service h2 {
     padding-top:15px;
 }
-.service p {
-    padding:0px 50px;
-    height:60px;
+
+.service__body{
+    background:var(--color-secondary-dark);
 }
+
+.service p {
+    /* padding:0px 50px; */
+    height:auto;
+}
+
 .service img {
     width:78px;
     height:78px;
     max-width: 73%;
+}
+
+@media (hover){
+    .service{
+        height: 275px;
+    }
+
+    .service__body{
+        transform: translateY(40px);
+        transition: all 500ms ease;
+    }
+
+    .service:hover .service__body,
+    .service:focus-within .service__body{
+        transform: translateY(-100px);
+    }
+
+    .service p {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 50ms ease;
+    }
+
+    .service:hover p,
+    .service:focus-within p{
+        opacity: 1;
+        visibility: visible;
+    }
 }
 /*
 3.3 Portfolio
