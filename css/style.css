@@ -130,18 +130,29 @@ p {
     box-shadow: none;
 }
 
-/* .navbar-inner .container{
+.navbar .brand img:nth-child(1) {
+    max-width: 80px;
+    margin-right: -24px;
+}
+
+.navbar .brand img:nth-child(2) {
+    max-width: 150px;
+}
+
+.navbar-inner .container{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
 }
 
 .navbar-inner nav{
     margin-left: auto;
-} */
-/* .navbar .brand img {
-    width:220px;
-} */
+}
+.navbar .brand {
+    padding: 0;
+}
 
 .navbar .logo{
     color:var(--color-secondary-dark);
@@ -195,6 +206,7 @@ p {
     background-color: var(--color-primary);
 }
 .navbar .btn-navbar {
+    margin-left: auto;
     border-radius:0;
     background:var(--color-primary);
     color: #000;
@@ -233,6 +245,7 @@ p {
     }
     .nav-collapse {
         clear: both;
+        width: 100%;
     }
     .nav-collapse .nav {
         float: none;
@@ -258,6 +271,11 @@ p {
     .navbar a:focus{
         /* box-shadow: rgb(0 0 0 / 13%) 0px 3px 8px inset; */
         box-shadow: inset 0px 3px 8px rgba(0, 0, 0 , 0.13);
+    }
+
+    .navbar-inner .container{
+        padding-left:20px;
+        padding-right:20px;
     }
 }
 /******
@@ -519,7 +537,7 @@ p {
     z-index: 2;
 }
 
-.home-container .tagline h1{
+/* .home-container .tagline h1{
     font-size: var(--fs-xxl);
     padding: 1.5rem 2rem;
     color: var(--color-primary);
@@ -528,6 +546,9 @@ p {
     line-height: 2.6rem;
     border-radius: 16px;
     text-align: center;
+} */
+.home-container .tagline h1 img{
+    max-width: 418px;
 }
 /*******
 3.2 Services  
