@@ -131,6 +131,7 @@ p {
     filter: none;
     border: none;
     box-shadow: none;
+    padding-inline: 0;
 }
 
 .navbar .brand img:nth-child(1) {
@@ -551,8 +552,15 @@ p {
     text-align: center;
 } */
 .home-container .tagline h1 img{
-    max-width: 418px;
+    max-width: 250px;
 }
+
+@media (min-width: 979px){
+    .home-container .tagline h1 img{
+        max-width: 418px;
+    }
+}
+
 /*******
 3.2 Services  
 ***************************************/
