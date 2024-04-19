@@ -735,13 +735,38 @@ p {
   margin: 0;
   font-size: var(--fs-400);
   line-height: 22px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .timeline ul{
-    list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.timeline h3{
+    font-size: var(--fs-500);
+    line-height: 1.7rem;
+    font-weight: 300;
+}
+
+.timeline p{
+    padding: 0;
+}
+
+@media (hover) and (min-width: 979px){
+    .timeline ul{
+        display: flex;
+    }
+
+    .timeline p{
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+    }
+
+    .timeline .content:hover  p{
+        max-height: 100%;
+    }
 }
 
 @media (max-width: 1200px) {
