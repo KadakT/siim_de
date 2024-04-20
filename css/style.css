@@ -741,6 +741,7 @@ p {
 .timeline ul{
     margin: 0;
     padding: 0;
+    padding-left: 0.5rem;
 }
 
 .timeline h3{
