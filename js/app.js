@@ -103,10 +103,11 @@
         });
     });
 
+
     /*
 Sand mail
 **********************************************************************/
-$("#send-mail").click(function () {
+    $("#send-mail").click(function () {
 
         var name = $('input#name').val(); // get the value of the input field
         var error = false;
@@ -184,6 +185,40 @@ $("#send-mail").click(function () {
         }
     });
        
+    var $carousel = $(".carousel");
+    var $slides = $(".carousel-slide");
+    var currentIndex = 0;
+
+    function showSlide(index) {
+        if (index < 0) {
+            currentIndex = $slides.length - 1;
+        } else if (index >= $slides.length) {
+            currentIndex = 0;
+        }
+
+        $carousel.css("transform", `translateX(-${currentIndex * 100}%)`);
+    }
+
+    // if ($nextButton.length && $prevButton.length) {
+    //     $nextButton.click(function() {
+    //         currentIndex++;
+    //         showSlide(currentIndex);
+    //     });
+
+    //     $prevButton.click(function() {
+    //         currentIndex--;
+    //         showSlide(currentIndex);
+    //     });
+    // }
+
+ var autoAdvanceInterval = 3000; // Change slide every 3 seconds
+
+    setInterval(function() {
+        currentIndex++;
+        showSlide(currentIndex);
+    }, autoAdvanceInterval);
+
 
 });
+
 

@@ -707,27 +707,28 @@ p {
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 1;
+  white-space: nowrap;
 }
 
 .timeline .container.left .date {
-  right: -75px;
+  left: 105%;
 }
 
 .timeline .container.right .date {
-  left: -75px;
+  right: 105%;
 }
 
 .timeline .container .content {
-  padding: 30px 90px 30px 30px;
+  padding: 16px 90px 16px 30px;
   background: var(--color-secondary-dark);
   position: relative;
-  border-radius: 0 500px 500px 0;
+  border-radius: 0 10px 10px 0;
   font-weight: 100;
 }
 
 .timeline .container.right .content {
-  padding: 30px 30px 30px 90px;
-  border-radius: 500px 0 0 500px;
+  padding: 30px 30px 30px 50px;
+  border-radius: 10px 0 0 10px;
 }
 
 
@@ -742,6 +743,8 @@ p {
     margin: 0;
     padding: 0;
     padding-left: 0.5rem;
+	display: flex;
+    flex-direction: column;
 }
 
 .timeline h3{
@@ -759,14 +762,15 @@ p {
         display: flex;
     }
 
-    .timeline p{
+    .timeline .show-more{
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.5s ease-out;
+        transition: max-height 0.15s ease-out;
     }
 
-    .timeline .content:hover  p{
+    .timeline .content li:hover > .show-more{
         max-height: 100%;
+        transition: max-height 0.25s ease-in;
     }
 }
 
@@ -798,7 +802,7 @@ p {
     }
 
     .timeline .container::after{
-        width: 70px;
+        width: 250px;
         height: 23px;
         top: -15px;
         right: 50%;
@@ -810,12 +814,13 @@ p {
 
     .timeline .container .date{
         top: -13px;
-        right: 50%;
+        right: 50% !important;
         transform: translate(50%);
         z-index: 3;
     }
     .timeline .container.left .date {
         right: 50%;
+        left: auto;
     }
 
     .timeline .container .content,
@@ -1039,5 +1044,3 @@ p {
     top:7px;
     color:#fff;
 }
-
-
